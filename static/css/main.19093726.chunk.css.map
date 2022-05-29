@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAIA,WAHE,YAQF,CALA,MACE,WAAY,CACZ,YAAa,CAEb,cACF,CAEA,IACE,WAAY,CACZ,UACF","file":"main.19093726.chunk.css","sourcesContent":[".app{\n  display: flex;\n}\n\n.game{\n  width: 560px;\n  height: 560px;\n  display: flex;\n  flex-wrap: wrap;\n}\n\nimg{\n  height: 70px;\n  width: 70px;\n}"]}

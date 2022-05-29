@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/CandyTwist/static/css/main.19093726.chunk.css",
+    "main.js": "/CandyTwist/static/js/main.ac5e4643.chunk.js",
+    "main.js.map": "/CandyTwist/static/js/main.ac5e4643.chunk.js.map",
+    "runtime-main.js": "/CandyTwist/static/js/runtime-main.884c228c.js",
+    "runtime-main.js.map": "/CandyTwist/static/js/runtime-main.884c228c.js.map",
+    "static/js/2.84560bf9.chunk.js": "/CandyTwist/static/js/2.84560bf9.chunk.js",
+    "static/js/2.84560bf9.chunk.js.map": "/CandyTwist/static/js/2.84560bf9.chunk.js.map",
+    "index.html": "/CandyTwist/index.html",
+    "static/css/main.19093726.chunk.css.map": "/CandyTwist/static/css/main.19093726.chunk.css.map",
+    "static/js/2.84560bf9.chunk.js.LICENSE.txt": "/CandyTwist/static/js/2.84560bf9.chunk.js.LICENSE.txt",
+    "static/media/Green.599f7016.png": "/CandyTwist/static/media/Green.599f7016.png",
+    "static/media/blank.fbcb9179.png": "/CandyTwist/static/media/blank.fbcb9179.png",
+    "static/media/blue.73120c15.png": "/CandyTwist/static/media/blue.73120c15.png",
+    "static/media/orange.f106b2cd.png": "/CandyTwist/static/media/orange.f106b2cd.png",
+    "static/media/purple-candy.ae25b8a5.png": "/CandyTwist/static/media/purple-candy.ae25b8a5.png",
+    "static/media/red-candy.3658b37c.png": "/CandyTwist/static/media/red-candy.3658b37c.png",
+    "static/media/yellow-candy.a3d87a9b.png": "/CandyTwist/static/media/yellow-candy.a3d87a9b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.884c228c.js",
+    "static/js/2.84560bf9.chunk.js",
+    "static/css/main.19093726.chunk.css",
+    "static/js/main.ac5e4643.chunk.js"
+  ]
+}
