@@ -15,7 +15,7 @@ const Database = () => {
     <div>
       {console.log(inpData)}
       <input type="text" onChange={e => setinpData(e.target.value)} />
-      <button> click me</button>
+      <button>Submit Score</button>
     </div>
   )
 }
