@@ -1,0 +1,17 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyA_f5Py8HAtf15O3Mk2vg17ylD-6QZ8kVw",
+  authDomain: "react-candy-crush.firebaseapp.com",
+  projectId: "react-candy-crush",
+  storageBucket: "react-candy-crush.appspot.com",
+  messagingSenderId: "135288119534",
+  appId: "1:135288119534:web:439cc52608de59e10253ff"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
