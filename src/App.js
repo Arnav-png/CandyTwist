@@ -11,6 +11,9 @@ import yellowCandy from './images/yellow-candy.png'
 //components
 import ScoreBoard from "./components/ScoreBoard"
 import Database from "./components/Database"
+import LeaderBoard from "./components/LeaderBoard"
+//context
+import {ScoreContext} from './Context/ScoreContext'
 
 
 
@@ -23,6 +26,11 @@ function App() {
   const [squareBeingDragged, setSquareBeingDragged] = useState()
   const [squareBeingReplaced, setSquareBeingReplaced] = useState()
   const [scoreDislpay, setScoreDislpay] = useState(0)
+
+  const [DATA, setDATA] = useState({
+    Username: "",
+    Score: ""
+  })
 
 
   const createBoard = () => {
@@ -118,39 +126,7 @@ function App() {
   const dragDrop = (e) => {
     setSquareBeingReplaced(e.target)
   }
-  const dragEnd = (e) => {
-    const squareBeingDraggedId = parseInt(squareBeingDragged.getAttribute("data-id"))
-    const squareBeingReplacedId = parseInt(squareBeingReplaced.getAttribute('data-id'))
-
-    currentColorArrangement[squareBeingReplacedId] = squareBeingDragged.getAttribute('src')
-    currentColorArrangement[squareBeingDraggedId] = squareBeingReplaced.getAttribute('src')
-
-    const validMoves = [
-      squareBeingDraggedId - 1,
-      squareBeingDragged - width,
-      squareBeingDraggedId + 1,
-      squareBeingDragged + width,
-    ]
-
-    const validMove = validMoves.includes(squareBeingReplacedId)
-    const isACoulumnOfFour = checkForColumnOfFour()
-    const isARowOfFour = checkForRowOfFour()
-    const isACoulumnOfThree = checkForColumnOfThree()
-    const isARowOfThree = checkForRowOfThree()
-
-    if (squareBeingReplacedId && validMove && (isACoulumnOfFour || isACoulumnOfThree || isARowOfFour || isARowOfThree)) {
-      setSquareBeingDragged(null)
-      setSquareBeingReplaced(null)
-    }
-    else {
-      currentColorArrangement[squareBeingReplacedId] = squareBeingReplaced.getAttribute('src')
-      currentColorArrangement[squareBeingDraggedId] = squareBeingDragged.getAttribute('src')
-      setCurrentColorArrangement([...currentColorArrangement])
-    }
-
-
-  }
-
+  
 
   useEffect(() => {
     createBoard()
@@ -168,7 +144,45 @@ function App() {
     return () => clearInterval(timer)
   }, [checkForColumnOfFour, checkForRowOfFour, currentColorArrangement, checkForRowOfThree, checkForColumnOfThree,])
 
+  const dragEnd = (e) => {
+    const squareBeingDraggedId = parseInt(squareBeingDragged.getAttribute('data-id'))
+    const squareBeingReplacedId = parseInt(squareBeingReplaced.getAttribute('data-id'))
+
+    const validMoves = [
+      squareBeingDraggedId - 1,
+      squareBeingDraggedId - width,
+      squareBeingDraggedId + 1,
+      squareBeingDraggedId + width
+    ]
+
+    const validMove = validMoves.includes(squareBeingReplacedId)
+
+    console.log(validMove);
+
+    
+    if (validMove) {
+      currentColorArrangement[squareBeingReplacedId] = squareBeingDragged.getAttribute('src')
+      currentColorArrangement[squareBeingDraggedId] = squareBeingReplaced.getAttribute('src')
+      
+      const isAColumnOfFour = checkForColumnOfFour()
+      const isARowOfFour = checkForRowOfFour()
+      const isAColumnOfThree = checkForColumnOfThree()
+      const isARowOfThree = checkForRowOfThree()
+
+      if (squareBeingReplacedId &&
+        (isAColumnOfFour || isARowOfFour || isAColumnOfThree || isARowOfThree)) {
+        setSquareBeingDragged(null)
+        setSquareBeingDragged(null)
+      } else {
+        currentColorArrangement[squareBeingReplacedId] = squareBeingReplaced.getAttribute('src')
+        currentColorArrangement[squareBeingDraggedId] = squareBeingDragged.getAttribute('src')
+        setCurrentColorArrangement([...currentColorArrangement])
+      }
+    }
+  }
+
   return (
+    <ScoreContext.Provider value={{DATA, setDATA}}>
     <div className="app">
       <div className="game">
         {currentColorArrangement.map((candyColor, index) => (
@@ -189,8 +203,10 @@ function App() {
         ))}
       </div>
       <ScoreBoard score={scoreDislpay} />
-      <Database></Database>
+      <Database/>
+      <LeaderBoard/>
     </div>
+    </ScoreContext.Provider>
   );
 }
 

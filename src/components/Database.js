@@ -1,21 +1,37 @@
-import React, { useState, useEffect } from 'react'
+import React, { useContext} from 'react'
+import axios from 'axios'
+import { ScoreContext } from '../Context/ScoreContext'
 
 
 const Database = () => {
 
-  const [DATA, setDATA] = useState({
-    User: "ARNAV",
-    Score: 45
+  const{DATA, setDATA} =  useContext(ScoreContext);
+
+  const changeHandler=(e)=>{
+    e.preventDefault()
+    setDATA({
+      ...DATA,
+      Username:e.target.value
+    })
+  }
+
+
+  const submitHandler = (e)=>{
+    e.preventDefault()
+    axios.post("https://candytwist-node-deploy.herokuapp.com/score",DATA)
+    .then(res=>{alert(res.status===200?"Score added":"Something went wrong!")
+  window.location.reload()
   })
-
-  const [inpData, setinpData] = useState("")
-
+    .catch(err=>console.log(err))
+  }
 
   return (
     <div>
-      {console.log(inpData)}
-      <input type="text" onChange={e => setinpData(e.target.value)} />
-      <button>Submit Score</button>
+      {console.log(DATA)}
+      <form onSubmit={submitHandler}>
+      <input required type="text" onChange={changeHandler} />
+      <button type='submit'>Submit Score</button>
+      </form>
     </div>
   )
 }
