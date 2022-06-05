@@ -10,10 +10,10 @@ import {
 import FullLeaderBoard from './components/FullLeaderBoard'
 
 ReactDOM.render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Routes>
-      <Route path="/" element={<App/>}/>
-      <Route path="/leaderBoard" element={<FullLeaderBoard/>}/>
+      <Route exact path="/" element={<App/>}/>
+      <Route exact path="/leaderBoard" element={<FullLeaderBoard/>}/>
     </Routes>
   </Router>
   ,
