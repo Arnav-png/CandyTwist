@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CandyTwist/static/css/main.80d0b64f.chunk.css",
-    "main.js": "/CandyTwist/static/js/main.21c9b7c7.chunk.js",
-    "main.js.map": "/CandyTwist/static/js/main.21c9b7c7.chunk.js.map",
+    "main.js": "/CandyTwist/static/js/main.4d1d0ab8.chunk.js",
+    "main.js.map": "/CandyTwist/static/js/main.4d1d0ab8.chunk.js.map",
     "runtime-main.js": "/CandyTwist/static/js/runtime-main.884c228c.js",
     "runtime-main.js.map": "/CandyTwist/static/js/runtime-main.884c228c.js.map",
     "static/js/2.2d7126d1.chunk.js": "/CandyTwist/static/js/2.2d7126d1.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.884c228c.js",
     "static/js/2.2d7126d1.chunk.js",
     "static/css/main.80d0b64f.chunk.css",
-    "static/js/main.21c9b7c7.chunk.js"
+    "static/js/main.4d1d0ab8.chunk.js"
   ]
 }
