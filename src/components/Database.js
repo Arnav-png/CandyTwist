@@ -1,6 +1,7 @@
 import React, { useContext} from 'react'
 import axios from 'axios'
 import { ScoreContext } from '../Context/ScoreContext'
+import Styles from './Database.module.css'
 
 
 const Database = () => {
@@ -28,8 +29,8 @@ const Database = () => {
   return (
     <div>
       {console.log(DATA)}
-      <form onSubmit={submitHandler}>
-      <input required type="text" onChange={changeHandler} />
+      <form className={Styles.main} onSubmit={submitHandler}>
+      <input required type="text" onChange={changeHandler} placeholder="Enter Username...." />
       <button type='submit'>Submit Score</button>
       </form>
     </div>

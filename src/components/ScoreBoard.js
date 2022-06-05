@@ -13,7 +13,7 @@ const ScoreBoard = (props) => {
 
   return (
     <div className="score-board">
-      <h2>{props.score}</h2>
+      <h2>Score:{props.score}</h2>
     </div>
   )
 }
