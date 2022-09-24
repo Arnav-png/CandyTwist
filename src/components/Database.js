@@ -28,7 +28,7 @@ const Database = () => {
 
   return (
     <div>
-      {console.log(DATA)}
+      {/* {console.log(DATA)} */}
       <form className={Styles.main} onSubmit={submitHandler}>
       <input required type="text" onChange={changeHandler} placeholder="Enter Username...." />
       <button type='submit'>Submit Score</button>

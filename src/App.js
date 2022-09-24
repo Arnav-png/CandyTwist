@@ -200,7 +200,7 @@ function App() {
 
     const validMove = validMoves.includes(squareBeingReplacedId);
 
-    console.log(validMove);
+    // console.log(validMove);
 
     if (validMove) {
       currentColorArrangement[squareBeingReplacedId] =
