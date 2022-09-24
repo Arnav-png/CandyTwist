@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CandyTwist/static/css/main.80d0b64f.chunk.css",
-    "main.js": "/CandyTwist/static/js/main.4d1d0ab8.chunk.js",
-    "main.js.map": "/CandyTwist/static/js/main.4d1d0ab8.chunk.js.map",
+    "main.css": "/CandyTwist/static/css/main.8b0e2cca.chunk.css",
+    "main.js": "/CandyTwist/static/js/main.5f65d028.chunk.js",
+    "main.js.map": "/CandyTwist/static/js/main.5f65d028.chunk.js.map",
     "runtime-main.js": "/CandyTwist/static/js/runtime-main.884c228c.js",
     "runtime-main.js.map": "/CandyTwist/static/js/runtime-main.884c228c.js.map",
-    "static/js/2.2d7126d1.chunk.js": "/CandyTwist/static/js/2.2d7126d1.chunk.js",
-    "static/js/2.2d7126d1.chunk.js.map": "/CandyTwist/static/js/2.2d7126d1.chunk.js.map",
+    "static/js/2.d4245e8e.chunk.js": "/CandyTwist/static/js/2.d4245e8e.chunk.js",
+    "static/js/2.d4245e8e.chunk.js.map": "/CandyTwist/static/js/2.d4245e8e.chunk.js.map",
     "index.html": "/CandyTwist/index.html",
-    "static/css/main.80d0b64f.chunk.css.map": "/CandyTwist/static/css/main.80d0b64f.chunk.css.map",
-    "static/js/2.2d7126d1.chunk.js.LICENSE.txt": "/CandyTwist/static/js/2.2d7126d1.chunk.js.LICENSE.txt",
+    "static/css/main.8b0e2cca.chunk.css.map": "/CandyTwist/static/css/main.8b0e2cca.chunk.css.map",
+    "static/js/2.d4245e8e.chunk.js.LICENSE.txt": "/CandyTwist/static/js/2.d4245e8e.chunk.js.LICENSE.txt",
     "static/media/BG.69605533.png": "/CandyTwist/static/media/BG.69605533.png",
     "static/media/Green.599f7016.png": "/CandyTwist/static/media/Green.599f7016.png",
     "static/media/blank.fbcb9179.png": "/CandyTwist/static/media/blank.fbcb9179.png",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.884c228c.js",
-    "static/js/2.2d7126d1.chunk.js",
-    "static/css/main.80d0b64f.chunk.css",
-    "static/js/main.4d1d0ab8.chunk.js"
+    "static/js/2.d4245e8e.chunk.js",
+    "static/css/main.8b0e2cca.chunk.css",
+    "static/js/main.5f65d028.chunk.js"
   ]
 }
